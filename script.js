@@ -14,7 +14,7 @@ const output = document.getElementById("output");
           const img = new Image();
           img.src = url;
           img.onload = () => resolve(img);
-          img.onerror = () => reject(Failed to load image from ${url});
+          img.onerror = () => reject(`Failed to load image from ${url}`);
         });
       }
 
